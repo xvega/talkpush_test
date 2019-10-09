@@ -2,8 +2,8 @@ default: &default
   adapter: postgresql
   encoding: unicode
   host: db
-  username: postgres
-  password:
+  username: <%= Rails.application.credentials.dig(:development, :postgres_username) %>
+  password: <%= Rails.application.credentials.dig(:development, :postgres_password) %>
   pool: 5
 
 development:
