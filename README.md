@@ -37,4 +37,8 @@ docker-compose run web rails db:create
 
 docker-compose run web rails db:migrate
 
+* Individual tests 
+
+docker-compose run -e "RAILS_ENV=test" web rspec spec/services/talkpush_api_spec.rb
+
 

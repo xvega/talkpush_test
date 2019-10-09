@@ -1,0 +1,346 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://my.talkpush.com/api/talkpush_services/campaigns/3929/campaign_invitations
+    body:
+      encoding: UTF-8
+      string: api_key=secret_api_key&campaign_invitation[first_name]=first_name_test1828652&campaign_invitation[last_name]=last_name_test4776120&campaign_invitation[email]=email1%40test.com9489970&campaign_invitation[user_phone_number]=5555555581806559&headers[Content-Type]=application%2Fjson
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 09 Oct 2019 20:19:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"5325520da6cbd8a48179f3c5baf073f7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ef1f7477-a122-4237-a1af-2b9b9e5b7bd2
+      X-Runtime:
+      - '0.232629'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Candidate was succesfully added to the campaign.","url":"https://my.talkpush.com/guests/campaign_invitations/938303/outbound_call?company_id=16\u0026outbound_token=148613eed5b9ebe7fe049bf79267efe67343187d7b8c49390b0ac9070f120b8f\u0026source=MICROSITE","pin":"105393","id":938303}'
+    http_version: 
+  recorded_at: Wed, 09 Oct 2019 20:19:23 GMT
+- request:
+    method: post
+    uri: https://my.talkpush.com/api/talkpush_services/campaigns/3929/campaign_invitations
+    body:
+      encoding: UTF-8
+      string: api_key=secret_api_key&campaign_invitation[first_name]=first_name_test16540582&campaign_invitation[last_name]=last_name_test2652091&campaign_invitation[email]=email1%40test.com3203977&campaign_invitation[user_phone_number]=5555555581320114&headers[Content-Type]=application%2Fjson
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 09 Oct 2019 20:20:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"b47fd2e2b65fe227ceecaaa69e0b1668"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - af207073-cea1-4d7a-bbf5-1dbe1243d002
+      X-Runtime:
+      - '0.268259'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Candidate was succesfully added to the campaign.","url":"https://my.talkpush.com/guests/campaign_invitations/938304/outbound_call?company_id=16\u0026outbound_token=81e490fc648d2ccef56d992ac269c943e04371a1a0ae723a404af5ae9c986899\u0026source=MICROSITE","pin":"259099","id":938304}'
+    http_version: 
+  recorded_at: Wed, 09 Oct 2019 20:20:08 GMT
+- request:
+    method: post
+    uri: https://my.talkpush.com/api/talkpush_services/campaigns/3929/campaign_invitations
+    body:
+      encoding: UTF-8
+      string: api_key=secret_api_key&campaign_invitation[first_name]=first_name_test_7786407&campaign_invitation[last_name]=last_name_test_7786407&campaign_invitation[email]=email7786407%40test.com&campaign_invitation[user_phone_number]=7786407&headers[Content-Type]=application%2Fjson
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 09 Oct 2019 20:22:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"86104c7a6a2561bfe1b520d989eb9920"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0717ce2b-7af6-47cb-9eda-6fd02451a8ff
+      X-Runtime:
+      - '0.268823'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Candidate was succesfully added to the campaign.","url":"https://my.talkpush.com/guests/campaign_invitations/938305/outbound_call?company_id=16\u0026outbound_token=70d7921fb6dd141eb576bd8ddb49041b85533fce48add49fd05b3608fc417879\u0026source=MICROSITE","pin":"278672","id":938305}'
+    http_version: 
+  recorded_at: Wed, 09 Oct 2019 20:22:28 GMT
+- request:
+    method: post
+    uri: https://my.talkpush.com/api/talkpush_services/campaigns/3929/campaign_invitations
+    body:
+      encoding: UTF-8
+      string: api_key=secret_api_key&campaign_invitation[first_name]=first_name_test_7823259&campaign_invitation[last_name]=last_name_test_7823259&campaign_invitation[email]=email7823259%40test.com&campaign_invitation[user_phone_number]=7823259&headers[Content-Type]=application%2Fjson
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 09 Oct 2019 20:28:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"32f2a41c7e76375f8fadc054c67687a2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b2c355d7-4dd7-4800-925f-a129e3702d6f
+      X-Runtime:
+      - '0.274212'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Candidate was succesfully added to the campaign.","url":"https://my.talkpush.com/guests/campaign_invitations/938306/outbound_call?company_id=16\u0026outbound_token=f8525e7eecac8d6d2babed647e2024c2d95f768bdec7cf21e80d76a18776c577\u0026source=MICROSITE","pin":"856798","id":938306}'
+    http_version: 
+  recorded_at: Wed, 09 Oct 2019 20:28:59 GMT
+- request:
+    method: post
+    uri: https://my.talkpush.com/api/talkpush_services/campaigns/3929/campaign_invitations
+    body:
+      encoding: UTF-8
+      string: api_key=secret_api_key&campaign_invitation[first_name]=first_name_test_5433263&campaign_invitation[last_name]=last_name_test_5433263&campaign_invitation[email]=email5433263%40test.com&campaign_invitation[user_phone_number]=5433263&headers[Content-Type]=application%2Fjson
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 09 Oct 2019 20:30:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"4eb4fb2fdfc96ddc8acaaa9ffccd8327"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ccb6f59b-9636-48c9-b622-8bf77a850fce
+      X-Runtime:
+      - '0.207240'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Candidate was succesfully added to the campaign.","url":"https://my.talkpush.com/guests/campaign_invitations/938307/outbound_call?company_id=16\u0026outbound_token=63fa80f5e20a46a1cf5906b3396e1b4fd2d28e831bb0437859af5783952d2b05\u0026source=MICROSITE","pin":"755624","id":938307}'
+    http_version: 
+  recorded_at: Wed, 09 Oct 2019 20:30:03 GMT
+- request:
+    method: post
+    uri: https://my.talkpush.com/api/talkpush_services/campaigns/3929/campaign_invitations
+    body:
+      encoding: UTF-8
+      string: api_key=secret_api_key&campaign_invitation[first_name]=first_name_test_9916634&campaign_invitation[last_name]=last_name_test_9916634&campaign_invitation[email]=email9916634%40test.com&campaign_invitation[user_phone_number]=9916634&headers[Content-Type]=application%2Fjson
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 09 Oct 2019 20:44:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"f9a2041f7cfe9becf6432773da250b12"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 610cbe53-434d-4aa6-96e9-bc13a9b033e8
+      X-Runtime:
+      - '0.213171'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Candidate was succesfully added to the campaign.","url":"https://my.talkpush.com/guests/campaign_invitations/938308/outbound_call?company_id=16\u0026outbound_token=335b0f0373b9af0a46516d50c9aac7f9398e0cfc6c77ae406315e4693f95c8e6\u0026source=MICROSITE","pin":"890194","id":938308}'
+    http_version: 
+  recorded_at: Wed, 09 Oct 2019 20:44:42 GMT
+- request:
+    method: post
+    uri: https://my.talkpush.com/api/talkpush_services/campaigns/3929/campaign_invitations
+    body:
+      encoding: UTF-8
+      string: api_key=secret_api_key&campaign_invitation[first_name]=first_name_test_9369102&campaign_invitation[last_name]=last_name_test_9369102&campaign_invitation[email]=email9369102%40test.com&campaign_invitation[user_phone_number]=9369102&headers[Content-Type]=application%2Fjson
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 09 Oct 2019 20:45:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"bc1d03d6b3d20696a71c775bf8a47827"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e7e6e634-66af-411f-a19d-a5069959d229
+      X-Runtime:
+      - '0.250044'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Candidate was succesfully added to the campaign.","url":"https://my.talkpush.com/guests/campaign_invitations/938309/outbound_call?company_id=16\u0026outbound_token=ca7d821f3f0a29b7693f5188fb5283de9e41f90c3d504f23c3d397b99b1fa6ef\u0026source=MICROSITE","pin":"025594","id":938309}'
+    http_version: 
+  recorded_at: Wed, 09 Oct 2019 20:45:55 GMT
+recorded_with: VCR 5.0.0

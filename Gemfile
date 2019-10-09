@@ -11,6 +11,7 @@ gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
+gem 'httparty'
 
 group :development, :test do
   gem 'capybara'
@@ -18,6 +19,9 @@ group :development, :test do
   gem 'factory_bot'
   gem 'rspec-rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'webmock'
+  gem 'vcr'
+  gem 'rubocop'
 end
 
 group :development do
