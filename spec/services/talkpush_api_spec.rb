@@ -7,11 +7,11 @@ describe 'TalkPush Api' do
   it 'makes a request to the candidate creation endpoint',
      vcr: { cassette_name: 'talkpush/campaign', record: :new_episodes } do
 
-    response = TalkPushApiService.new.create_candidate_request(
+    response = TalkPushApi::TalkPushApiService.new.request_candidate_creation(
         { first_name:        "first_name_test_#{random_number}",
                  last_name:         "last_name_test_#{random_number}",
                  email:             "email#{random_number}@test.com",
-                 user_phone_number: "#{random_number}"
+                 phone_number:      "#{random_number}"
         }
     )
 
