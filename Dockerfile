@@ -1,7 +1,7 @@
 FROM ruby:2.6.5
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs ghostscript
+RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs ghostscript cron
 
 RUN mkdir /talk_push_test_app
 WORKDIR /talk_push_test_app
@@ -21,6 +21,12 @@ RUN npm install -g yarn
 RUN yarn install --check-files
 
 COPY . /talk_push_test_app
+
+# Create empty crontab file
+RUN crontab -l | { cat; echo ""; } | crontab -
+
+# Update crontab file using whenever command
+RUN bundle exec whenever --update-crontab
 
 # Add a script to be executed every time the container starts.
 COPY entrypoint.sh /usr/bin/

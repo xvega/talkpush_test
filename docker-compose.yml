@@ -4,9 +4,23 @@ services:
     image: postgres
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
+  delayed_job:
+    build: .
+    command: bundle exec rails jobs:work
+    volumes:
+      - .:/talk_push_test_app
+    depends_on:
+      - db
+  cron_job:
+    build: .
+    command: cron -f
+    depends_on:
+      - db
   web:
     build: .
     command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    stdin_open: true
+    tty: true
     volumes:
       - .:/talk_push_test_app
     ports:
