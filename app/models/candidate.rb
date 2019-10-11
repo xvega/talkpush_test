@@ -16,4 +16,10 @@ class Candidate < ApplicationRecord
   def self.create_from_params(candidate_params)
     create(candidate_params)
   end
+
+  def self.last_candidate
+    return if count.zero?
+    # Yeah this is intended, I need an array with the last record
+    last(1).pluck(:timestamp, :first_name, :last_name, :email, :phone_number).last
+  end
 end
