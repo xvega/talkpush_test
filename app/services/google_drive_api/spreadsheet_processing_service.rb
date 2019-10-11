@@ -27,6 +27,10 @@ module GoogleDriveApi
       end
     end
 
+    def reload_ws
+      ws.reload
+    end
+
     private
 
     def build_candidate_params(candidate)
@@ -43,10 +47,6 @@ module GoogleDriveApi
     def find_last_update(ws_rows)
       last_insert = Candidate.last_candidate
       last_insert.nil? ? 1 : (ws_rows.find_index(last_insert))
-    end
-
-    def reload_ws
-      ws.reload
     end
 
     # Setting a new start point for recording candidates
