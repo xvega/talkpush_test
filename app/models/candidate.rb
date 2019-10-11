@@ -14,7 +14,8 @@ class Candidate < ApplicationRecord
   end
 
   def self.create_from_params(candidate_params)
-    create(candidate_params)
+    candidate = new(candidate_params)
+    candidate.save if candidate&.valid?
   end
 
   def self.last_candidate
