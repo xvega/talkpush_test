@@ -1,5 +1,19 @@
-<% @candidates.each do |candidate| %>
-  <div class="candidate">
-    <%= candidate.email %>
-  </div>
-<% end %>
+<table>
+  <tr>
+    <th>first_name</th>
+    <th>last_name</th>
+    <th>email</th>
+    <th>phone_number</th>
+    <th>created_at</th>
+  </tr>
+
+  <% @candidates.each do |candidate| %>
+    <tr>
+      <td><%= candidate.first_name %></td>
+      <td><%= candidate.last_name %></td>
+      <td><%= candidate.email %></td>
+      <td><%= candidate.phone_number %></td>
+      <td><%= candidate.created_at %></td>
+    </tr>
+  <% end %>
+</table>

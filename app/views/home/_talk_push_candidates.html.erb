@@ -1,0 +1,21 @@
+<table>
+  <tr>
+    <th>candidate_email</th>
+    <th>response_message</th>
+    <th>error_message</th>
+    <th>lead_id</th>
+    <th>pin</th>
+    <th>created_at</th>
+  </tr>
+
+  <% @talk_push_candidates.each do |tpc| %>
+    <tr>
+      <td><%= tpc.candidate_email %></td>
+      <td><%= tpc.response_message %></td>
+      <td><%= tpc.error_message %></td>
+      <td><%= tpc.lead_id %></td>
+      <td><%= tpc.pin %></td>
+      <td><%= tpc.created_at %></td>
+    </tr>
+  <% end %>
+</table>
