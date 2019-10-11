@@ -16,7 +16,6 @@ module GoogleDriveApi
       # to the gitignore
       @session = GoogleDrive::Session.from_config('config.json')
       @ws = session.spreadsheet_by_key(SPREADSHEET_KEY).worksheets[0]
-      save_last_known_index
     end
 
     # In the job, call reload_spreadsheet first and then this method
@@ -38,14 +37,25 @@ module GoogleDriveApi
       Candidate.create_from_params(candidate)
     end
 
-    # This is where I store the last row index
-    def save_last_known_index
-      self.last_known_update_index= ws.rows.count
+    # I don't like how I'm retrieving the last index
+    # For now I'll keep it this way
+
+    def find_last_update(ws_rows)
+      last_insert = Candidate.last_candidate
+      last_insert.nil? ? 1 : (ws_rows.find_index(last_insert))
+    end
+
+    def reload_ws
+      ws.reload
     end
 
     # Setting a new start point for recording candidates
+    # It's dangerous if someone changes the order of the
+    # rows in the spreadsheet
     def new_candidates
-      ws.rows.drop(last_known_update_index)
+      ws_rows = ws.rows
+      last_index = find_last_update(ws_rows)
+      ws_rows.drop(last_index)
     end
   end
 end
