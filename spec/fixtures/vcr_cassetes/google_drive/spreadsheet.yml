@@ -13150,4 +13150,363 @@ http_interactions:
         }
     http_version: 
   recorded_at: Thu, 10 Oct 2019 21:05:23 GMT
+- request:
+    method: post
+    uri: https://www.googleapis.com/oauth2/v4/token
+    body:
+      encoding: ASCII-8BIT
+      string: grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJ0YWxrcHVzaHRlc3RAcHJheGlzLXBhcmF0ZXh0LTM0NS5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsImF1ZCI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL29hdXRoMi92NC90b2tlbiIsImV4cCI6MTU3MDgzNTAxNSwiaWF0IjoxNTcwODM0ODk1LCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUgaHR0cHM6Ly9zcHJlYWRzaGVldHMuZ29vZ2xlLmNvbS9mZWVkcy8ifQ.iDy65i4ZwAUE_LM-6yOdgysHjii1SaBVdXWDqNGzLDgUQmGQetRM-223mAJncSA8USYh0PSQ-7RpV1EBaHeAhKNitkgdt46ed84TugI56yc080Kf74RGMJdMeTz0YLvFhtBLi0jzZsFpdk3FnIIiJjOjvXg5utkc-Wm6PHS-2fG8qr3lNyYFdXFM-ItEGpi36LErUvHt50ILgQxKUDoLrhyqWPR5YaCcyf7G7SraqHBV5FIJbJ4j_pRHLx9sMwOX6KkS7xU1AeNBG-UrJxX5T3v_f7APe3RUwHxzJZ3aBm9pk0rQ2ut1NM8B-fxgzkp7-rrp-503CCFwUOEspfCvWA
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Fri, 11 Oct 2019 23:02:36 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="46,43",h3-Q048=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "access_token": "ya29.c.Kl6bBzYpCGe1lruS63XZGXc2bwz8rSlY7zDxVCNpTPF0-FizY8ntQB7MXsJFuEruKfPi_g9FDqHXmFhIX_fR7KLl3EEpQrYw96-ZLocrIm7uI7aOd6jU0fvVSLEfsVos",
+          "expires_in": 3600,
+          "token_type": "Bearer"
+        }
+    http_version: 
+  recorded_at: Fri, 11 Oct 2019 23:02:36 GMT
+- request:
+    method: post
+    uri: https://my.talkpush.com/api/talkpush_services/campaigns/3929/campaign_invitations
+    body:
+      encoding: UTF-8
+      string: api_key=secret_api_key&campaign_invitation[first_name]=First%20Name&campaign_invitation[last_name]=Last%20Name&campaign_invitation[email]=Email&campaign_invitation[user_phone_number]=Phone%20number&headers[Content-Type]=application%2Fjson
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 11 Oct 2019 23:02:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"0a66f530792fb4992393bac8424a0da3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3fc11bd5-5e62-4664-ac19-ac78e8d76ede
+      X-Runtime:
+      - '0.238303'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Candidate was succesfully added to the campaign.","url":"https://my.talkpush.com/guests/campaign_invitations/938358/outbound_call?company_id=16\u0026outbound_token=dc6d8eeda51a3d6ea1afa91f3efcc82da54598200709b3e4bc5efc557bf1fa51\u0026source=MICROSITE","pin":"867279","id":938358}'
+    http_version: 
+  recorded_at: Fri, 11 Oct 2019 23:02:38 GMT
+- request:
+    method: post
+    uri: https://my.talkpush.com/api/talkpush_services/campaigns/3929/campaign_invitations
+    body:
+      encoding: UTF-8
+      string: api_key=secret_api_key&campaign_invitation[first_name]=John&campaign_invitation[last_name]=lennon&campaign_invitation[email]=jlennon%40gmail.com&campaign_invitation[user_phone_number]=88888888&headers[Content-Type]=application%2Fjson
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 11 Oct 2019 23:02:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"bf2b2db0d3f95c43f3372e2b5508ccc0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d5513a03-122e-479a-9e56-14758447eb4f
+      X-Runtime:
+      - '0.219901'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Candidate was succesfully added to the campaign.","url":"https://my.talkpush.com/guests/campaign_invitations/938359/outbound_call?company_id=16\u0026outbound_token=65656be8773c56118518b766b838e8e4a97a80161ee82e22f9f32ad8c5a0ba70\u0026source=MICROSITE","pin":"897982","id":938359}'
+    http_version: 
+  recorded_at: Fri, 11 Oct 2019 23:02:40 GMT
+- request:
+    method: post
+    uri: https://www.googleapis.com/oauth2/v4/token
+    body:
+      encoding: ASCII-8BIT
+      string: grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJ0YWxrcHVzaHRlc3RAcHJheGlzLXBhcmF0ZXh0LTM0NS5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsImF1ZCI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL29hdXRoMi92NC90b2tlbiIsImV4cCI6MTU3MDgzNTAyMCwiaWF0IjoxNTcwODM0OTAwLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUgaHR0cHM6Ly9zcHJlYWRzaGVldHMuZ29vZ2xlLmNvbS9mZWVkcy8ifQ.YIPwpZlpKX6d5cvSgML4lwTZs0rHEMOv2uu6zRW-ykY0zz8BbR5pfhPwlyCzMKxiXEQOndGNnkvS8JWTfft9VkLEo_pkSC8DZZuQTi5TdE-bW-Z9GAxAXIFhblWnVWdP7vc5AyvJmPujs_h9jPL8g6emygUM_JFq_HwP18v2B-Qyp8u5nmNETPrBx8gfMta5q4JhVec_CmklIE67-dmfvumUVJR4nACGuDYB8oUKoj92hsRqPAETyLF8vdNyxJ7yLq7LUbnIVaPwAAnBwkNLnUR2istNhhoIgqrLh6IgRYD2FLObf58wH4MMzfbRgckadP3L73PDE2WRMPCxFU-jFQ
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Fri, 11 Oct 2019 23:02:40 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="46,43",h3-Q048=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "access_token": "ya29.c.Kl6bB-EpDP8tOQ9r9eLI-DF2q1l9OG2Zc7m-o4LMzWzGL20rvStOUDLCScquFgIceFt5gevga9wM1__ckhejVYXK4cf92kgEJxDpP7AZ6h9nJzfmI6RwZ4qzV094y9KX",
+          "expires_in": 3600,
+          "token_type": "Bearer"
+        }
+    http_version: 
+  recorded_at: Fri, 11 Oct 2019 23:02:40 GMT
+- request:
+    method: post
+    uri: https://my.talkpush.com/api/talkpush_services/campaigns/3929/campaign_invitations
+    body:
+      encoding: UTF-8
+      string: api_key=secret_api_key&campaign_invitation[first_name]=Ringo&campaign_invitation[last_name]=Starr&campaign_invitation[email]=rstarr%40gmail.com&campaign_invitation[user_phone_number]=88888888&headers[Content-Type]=application%2Fjson
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 11 Oct 2019 23:02:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"9bbe8ec3be2d827503280952c99b623a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0c0ce4cd-5191-46f2-831d-7bb04e9bdbc3
+      X-Runtime:
+      - '0.022947'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":"duplicated"}'
+    http_version: 
+  recorded_at: Fri, 11 Oct 2019 23:02:42 GMT
+- request:
+    method: post
+    uri: https://www.googleapis.com/oauth2/v4/token
+    body:
+      encoding: ASCII-8BIT
+      string: grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJ0YWxrcHVzaHRlc3RAcHJheGlzLXBhcmF0ZXh0LTM0NS5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsImF1ZCI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL29hdXRoMi92NC90b2tlbiIsImV4cCI6MTU3MDgzNzYzNiwiaWF0IjoxNTcwODM3NTE2LCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUgaHR0cHM6Ly9zcHJlYWRzaGVldHMuZ29vZ2xlLmNvbS9mZWVkcy8ifQ.bedRHD2_nVpnnm3U2oO628flC_Nevk-7RjJcWGBZP2gkGO4WrXV9karIBmi84H7tya8aZHbV7wHxniHjQcUCEIm50kvK29kf5iU3jHm-43Trq2kvSjzADE8xRc6KQh0o3TLZKHXQqTo3LUqtRIZzWCSTvOTzsR2YNo7wmuoMFK4gjdkfZEXeMp3NWH3_7PCCVBDYRmwsxRN5clAfSq54HFr3TgSdfzB86LoU9aCWmcc5j0ys_AWyf-QdezBFIMTEzSoUNPghZNzv0fWpICHm_Gu9GgOEL8Mt0G73NFDE-Xb8s7Oez9EOkWg2k4ud-I5cQnm6IJMLRbzoWLLerKq6rA
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Fri, 11 Oct 2019 23:46:16 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="46,43",h3-Q048=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "access_token": "ya29.c.Kl6bB_dQtBueDPDap1W3-XBHeP35zJKXfeX8CZAUk-MUkbSVsx-DBsdOqFATablP4_3DwIKLxWc9-AhnCKs2YLhUNDekHK9vDyZwEtcPOTYiRIOdjGfcRqaM2FuJeh9S",
+          "expires_in": 3600,
+          "token_type": "Bearer"
+        }
+    http_version: 
+  recorded_at: Fri, 11 Oct 2019 23:46:16 GMT
+- request:
+    method: post
+    uri: https://www.googleapis.com/oauth2/v4/token
+    body:
+      encoding: ASCII-8BIT
+      string: grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJ0YWxrcHVzaHRlc3RAcHJheGlzLXBhcmF0ZXh0LTM0NS5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsImF1ZCI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL29hdXRoMi92NC90b2tlbiIsImV4cCI6MTU3MDgzNzYzNywiaWF0IjoxNTcwODM3NTE3LCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvZHJpdmUgaHR0cHM6Ly9zcHJlYWRzaGVldHMuZ29vZ2xlLmNvbS9mZWVkcy8ifQ.H7omQyZu6qAkRKWIqbFuVDryvU5LZy5Bp1Xvur8JC2H7y4qoSzi-RbZHcL5FX_waC1YwOAlv40HAGCltxUtWp9RavCF4VpnBfnyoMjiti5oworHyTQbHpfSRCGaMr4QtGDDX9r4mYmcMuWKb87-K6UVyOJYuFkhjq6o2FKWO5pcIoRkoO0aHSWJYcv6S762WAY8YiOYkHpQ5D5pVVebTQ92_McGl1qOjr2hRlnVkT6E83KAFcMK04BtBkkAC5aqpOLSAsy0ibm63UPOP0GEWGZC5FZe_j0Ogl3jWu5hkNGFkwy1q7NuAUKl5mqDY2B46JrPUFELChbLtiG0Wgtpp7w
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Fri, 11 Oct 2019 23:46:17 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="46,43",h3-Q048=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "access_token": "ya29.c.Kl6bB0nT2K8nHgXq09WUIh39Dpdiggm6Mvht6fe-0ZYhWVXtTNIap2EcF0NWfintcVLpc1T0dWDzsc5DFcmHzniYeX-L6D3Kw9t1g_ml1XoxswRzaYF73tPzvNSYCMxT",
+          "expires_in": 3600,
+          "token_type": "Bearer"
+        }
+    http_version: 
+  recorded_at: Fri, 11 Oct 2019 23:46:17 GMT
 recorded_with: VCR 5.0.0

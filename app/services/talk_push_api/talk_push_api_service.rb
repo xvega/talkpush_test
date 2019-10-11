@@ -9,21 +9,25 @@ module TalkPushApi
     CAMPAIGN_URL = (base_uri + "/campaigns/#{CAMPAIGN_ID}/campaign_invitations").freeze
 
     def request_candidate_creation(params)
-      HTTParty.post(
+      begin
+        HTTParty.post(
           CAMPAIGN_URL,
           body: {
               api_key: API_KEY,
               campaign_invitation: {
-                  first_name: params[:first_name],
-                  last_name: params[:last_name],
-                  email: params[:email],
-                  user_phone_number: params[:phone_number],
+                  first_name: params['first_name'],
+                  last_name: params['last_name'],
+                  email: params['email'],
+                  user_phone_number: params['phone_number'],
               },
               headers: {
                   'Content-Type' => 'application/json'
               }
           }
-      )
+        )
+      rescue => e
+        "Request failed: #{e}"
+      end
     end
   end
 end

@@ -1,0 +1,199 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://my.talkpush.com/api/talkpush_services/campaigns/3929/campaign_invitations
+    body:
+      encoding: UTF-8
+      string: api_key=secret_api_key&campaign_invitation[first_name]=first_name_test&campaign_invitation[last_name]=last_name_test&campaign_invitation[email]=email%40test.com&campaign_invitation[user_phone_number]=random%20string&headers[Content-Type]=application%2Fjson
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 11 Oct 2019 15:30:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"9bbe8ec3be2d827503280952c99b623a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3abaef04-8e0a-4c7e-8654-f4fc03532e08
+      X-Runtime:
+      - '0.022576'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":"duplicated"}'
+    http_version: 
+  recorded_at: Fri, 11 Oct 2019 15:30:34 GMT
+- request:
+    method: post
+    uri: https://my.talkpush.com/api/talkpush_services/campaigns/3929/campaign_invitations
+    body:
+      encoding: UTF-8
+      string: api_key=secret_api_key&campaign_invitation[first_name]=first_name_test&campaign_invitation[last_name]=last_name_test&campaign_invitation[email]=email%40test.com&campaign_invitation[user_phone_number]=random%20string&headers[Content-Type]=application%2Fjson
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 11 Oct 2019 15:30:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"9bbe8ec3be2d827503280952c99b623a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 597eff00-3561-4b38-871f-6f48ab3d3750
+      X-Runtime:
+      - '0.054266'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":"duplicated"}'
+    http_version: 
+  recorded_at: Fri, 11 Oct 2019 15:30:36 GMT
+- request:
+    method: post
+    uri: https://my.talkpush.com/api/talkpush_services/campaigns/3929/campaign_invitations
+    body:
+      encoding: UTF-8
+      string: api_key=secret_api_key&campaign_invitation[first_name]=&campaign_invitation[last_name]=&campaign_invitation[email]=&campaign_invitation[user_phone_number]=&headers[Content-Type]=application%2Fjson
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 11 Oct 2019 22:55:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"9bbe8ec3be2d827503280952c99b623a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4bbdfeda-c20d-4beb-91d6-4b706b04ef81
+      X-Runtime:
+      - '0.033271'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":"duplicated"}'
+    http_version: 
+  recorded_at: Fri, 11 Oct 2019 22:55:23 GMT
+- request:
+    method: post
+    uri: https://my.talkpush.com/api/talkpush_services/campaigns/3929/campaign_invitations
+    body:
+      encoding: UTF-8
+      string: api_key=secret_api_key&campaign_invitation[first_name]=&campaign_invitation[last_name]=&campaign_invitation[email]=&campaign_invitation[user_phone_number]=&headers[Content-Type]=application%2Fjson
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 11 Oct 2019 22:55:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"9bbe8ec3be2d827503280952c99b623a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 33fb0e82-c250-41db-92ef-9ee175a79b50
+      X-Runtime:
+      - '0.026790'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":"duplicated"}'
+    http_version: 
+  recorded_at: Fri, 11 Oct 2019 22:55:25 GMT
+recorded_with: VCR 5.0.0

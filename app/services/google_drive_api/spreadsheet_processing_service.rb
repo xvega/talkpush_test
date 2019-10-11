@@ -23,7 +23,7 @@ module GoogleDriveApi
       new_candidates.each do |c|
         candidate_params = build_candidate_params(c)
         create_candidate(candidate_params) if candidate_params
-        # TalkPushApi::TalkPushApiService.new.request_candidate_creation(candidate_params)
+        talk_push_request(candidate_params)
       end
     end
 
@@ -32,6 +32,13 @@ module GoogleDriveApi
     end
 
     private
+
+    def talk_push_request(candidate_params)
+      candidate_email = candidate_params.dig('email')
+      talk_push_instance = TalkPushApi::TalkPushApiService.new
+      response = talk_push_instance.request_candidate_creation(candidate_params)
+      RequestTalkPushCandidate.create_from_response_params(response, candidate_email)
+    end
 
     def build_candidate_params(candidate)
       Candidate.build_from_params(candidate)
@@ -43,7 +50,6 @@ module GoogleDriveApi
 
     # I don't like how I'm retrieving the last index
     # For now I'll keep it this way
-
     def find_last_update(ws_rows)
       last_insert = Candidate.last_candidate
       last_insert.nil? ? 1 : (ws_rows.find_index(last_insert))
