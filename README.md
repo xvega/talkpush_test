@@ -62,13 +62,13 @@ I'm using rails `credentials` for encrypting and safely storing Talk Push API ke
     ```sh
     docker-compose run -e "RAILS_ENV=test" web rspec spec/services/talkpush_api_spec.rb
     ```
-# Developer's useful information:
+# Developer useful information:
 
 If you need to access the cronjob log do the following:
-    1. Run `docker ps`
-    2. Copy the `Container ID` for the cronjob
-    3. `docker exec -it {CONTAINER_ID} bash`
-    4. Run this line `cat /var/log/cron.log`
+1. Run `docker ps`
+2. Copy the `Container ID` for the cronjob
+3. `docker exec -it {CONTAINER_ID} bash`
+4. Run this line `cat /var/log/cron.log`
 
 # IMPORTANT: FIX WEBPACK ISSUE
 
