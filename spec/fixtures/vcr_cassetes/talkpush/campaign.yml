@@ -343,4 +343,53 @@ http_interactions:
       string: '{"message":"Candidate was succesfully added to the campaign.","url":"https://my.talkpush.com/guests/campaign_invitations/938361/outbound_call?company_id=16\u0026outbound_token=c76de63da9ca08406637171adb70eba9108f874d95919c9668e9c4c261e1bfb6\u0026source=MICROSITE","pin":"712595","id":938361}'
     http_version: 
   recorded_at: Fri, 11 Oct 2019 23:46:23 GMT
+- request:
+    method: post
+    uri: https://my.talkpush.com/api/talkpush_services/campaigns/3929/campaign_invitations
+    body:
+      encoding: UTF-8
+      string: api_key=secret_api_key&campaign_invitation[first_name]=first_name_test_2489484&campaign_invitation[last_name]=last_name_test_2489484&campaign_invitation[email]=email2489484%40test.com&campaign_invitation[user_phone_number]=2489484&headers[Content-Type]=application%2Fjson
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 12 Oct 2019 04:02:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"6bd55301e79accb613d3f6402cd9d2f6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 17bf6788-8d0e-4bff-b783-5f67fa88807e
+      X-Runtime:
+      - '0.481265'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Candidate was succesfully added to the campaign.","url":"https://my.talkpush.com/guests/campaign_invitations/938376/outbound_call?company_id=16\u0026outbound_token=ee4b78672f624e0cd03238135d24a4ec40956765105291d2f76f5318b1f6dd75\u0026source=MICROSITE","pin":"948890","id":938376}'
+    http_version: 
+  recorded_at: Sat, 12 Oct 2019 04:02:48 GMT
 recorded_with: VCR 5.0.0

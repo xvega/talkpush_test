@@ -8,7 +8,6 @@ describe 'SpreadsheetProcessingService' do
 
   let(:test_class_instance) { test_class.new }
 
-  #TODO: Fix headers insert
   let(:first_row) { ['Timestamp', 'First Name', 'Last Name', 'Email', 'Phone number'] }
   let(:candidate) { %w(1980/10/08 John lennon jlennon@gmail.com 88888888) }
   let(:rows) { [first_row, candidate] }
@@ -23,13 +22,13 @@ describe 'SpreadsheetProcessingService' do
 
     context 'when there are no candidates recorded' do
 
-      let!(:new_candidates) { allow(test_class_instance).to receive(:new_candidates).and_return(rows) }
+      let!(:new_candidates) { allow(test_class_instance).to receive(:new_candidates).and_return(rows.drop(1)) }
 
       it 'creates candidates from second row on',
          vcr: { cassette_name: 'google_drive/spreadsheet', record: :new_episodes } do
         expect do
           test_class_instance.request_new_candidates_creation
-        end.to change { Candidate.count }.by(2)
+        end.to change { Candidate.count }.by(1)
       end
     end
 

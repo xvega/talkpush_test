@@ -16,7 +16,6 @@ gem 'google_drive'
 gem 'delayed_job_active_record'
 gem 'whenever', require: false
 
-
 group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'

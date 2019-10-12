@@ -5,20 +5,12 @@ module GoogleDriveApi
 
     attr_accessor :session, :ws
 
-    # Virtual attribute to retrieve new candidates
-    # from google's spreadsheet
-
-    attr_accessor :last_known_update_index
-
     def initialize
-      # I should handle this config file because it's super insecure
-      # to have credentials on that json file. For now I'm adding it
-      # to the gitignore
+      # config.json is generated when you run the app for the first time
       @session = GoogleDrive::Session.from_config('config.json')
       @ws = session.spreadsheet_by_key(SPREADSHEET_KEY).worksheets[0]
     end
 
-    # In the job, call reload_spreadsheet first and then this method
     def request_new_candidates_creation
       new_candidates.each do |c|
         candidate_params = build_candidate_params(c)
